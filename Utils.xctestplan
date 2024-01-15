@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "8B470D00-85C0-4E55-8FD9-78338CBB36DA",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "Task1Tests",
+        "ViewControllerTests"
+      ],
+      "target" : {
+        "containerPath" : "container:Task1.xcodeproj",
+        "identifier" : "35DE56BF2B557499006BB8F9",
+        "name" : "Task1Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

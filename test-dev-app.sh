@@ -1,0 +1,1 @@
+xcodebuild test -project Task1.xcodeproj -configuration Debug -sdk iphonesimulator -scheme "Task1" -derivedDataPath ./build -testPlan "Utils" -destination 'platform=iOS Simulator,name=iPhone 15 Pro' -resultBundlePath ./test-results
