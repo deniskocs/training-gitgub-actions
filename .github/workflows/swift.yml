@@ -6,8 +6,9 @@ name: Swift
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+
+env:
+  BUNDLE_NAME: Test-app
 
 jobs:
   build:
@@ -16,5 +17,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Build
       run: ./build-dev-app.sh
+
+    - name: Store app as ${{ env.BUNDLE_NAME }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.BUNDLE_NAME }}
+        path: /Users/runner/work/training-gitgub-actions/training-gitgub-actions/build/Build/Products/Release-iphonesimulator/Task1-Dev.app
+
