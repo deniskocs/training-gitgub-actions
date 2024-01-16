@@ -25,5 +25,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ${{ env.BUNDLE_NAME }}
-        path: /Users/runner/work/training-gitgub-actions/training-gitgub-actions/build/Build/Products/Release-iphonesimulator/Task1-Dev.app
+        path: ./build/Build/Products/Release-iphonesimulator/Task1-Dev.app
 
